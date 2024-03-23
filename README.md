@@ -3,3 +3,4 @@ The pneumonia risk model for hemorrhagic stroke is named BADGED-3H (Brain hernia
 # Web site for predicting post-stroke pneumonia
 www.badged-lend.com
 
+![图1_20240323](https://github.com/xumingjun5208/badged-lend/assets/145756059/cbd18a3a-9b89-4a16-a15d-0fed39dcdc58)

@@ -160,35 +160,49 @@ This system is an AI-powered diagnostic assistant system designed to predict the
 
 ## Deployment Guide
 
-### Environment Setup
+### Requirements
 
-1. System Requirements
+- Python 3.8+
+- CUDA 11.0+ (GPU version)
+- 4GB+ RAM
 
-   - OS: Linux/Windows
-   - Python Version: 3.8+
-   - CUDA Version: 11.0+ (GPU version)
+### Installation
 
-2. Dependencies Installation
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. Clone repository
 
-3. Model Files
-   - Download pre-trained models
-   - Place in specified directory
-   - Check file permissions
+```bash
+git clone https://github.com/your-username/badged-lendcare.git
+cd badged-lendcare
+```
 
-### Starting Service
+2. Create and activate conda environment
 
-1. Development Mode
-   ```bash
-   python dev.py
-   ```
+```bash
+conda create -n SAP python=3.8
+conda activate SAP
+```
 
-2. Production Mode
-   ```bash
-   python app.py
-   ```
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Download model files
+
+```bash
+# Install huggingface_hub
+pip install huggingface_hub
+
+# Run download script
+python scripts/download_models.py
+```
+
+5. Start application
+
+```bash
+python app.py
+```
 
 3. Access Address
    - Local access: http://localhost:7860

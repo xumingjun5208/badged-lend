@@ -204,7 +204,7 @@ python scripts/download_models.py
 python app.py
 ```
 
-3. Access Address
+6. Access Address
    - Local access: http://localhost:7860
    - Default port: 7860
 

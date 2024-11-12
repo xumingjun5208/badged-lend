@@ -4,7 +4,6 @@
 
 本系统是一个基于深度学习的智能辅助诊断系统，用于预测卒中患者发生相关性肺炎的风险。系统支持缺血性卒中和出血性卒中两种类型的预测任务，通过整合病历文本和临床指标，为医生提供辅助决策支持。
 ![](https://github.com/user-attachments/assets/465adf14-6cb9-41e4-b56b-776c077f2e25)
-![demo](http://www.badged-lend.com)
 
 ## 在线演示
 

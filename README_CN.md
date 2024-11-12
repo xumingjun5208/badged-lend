@@ -197,12 +197,42 @@ pip install -r requirements.txt
 
 4. 下载模型文件
 
+选项 1：自动下载
 ```bash
-# 安装huggingface_hub
+# 安装 huggingface_hub
 pip install huggingface_hub
 
 # 运行下载脚本
 python scripts/download_models.py
+```
+
+选项 2：手动下载
+从以下地址下载模型文件：
+- HuggingFace 仓库：1.[donghao1234/badged-lend](https://huggingface.co/donghao1234/badged-lend)
+2.[hfl/chinese-macbert-base](https://huggingface.co/hfl/chinese-macbert-base)
+
+模型文件结构：
+```
+models/
+├── ischemic/
+│   ├── text/
+│   │   └── ais_baseline_macbertnewend2cnn_3_1time_epoch3.pth
+│   ├── structured/
+│   │   └── ais_SoftVoting_6_mice1.pkl
+│   └── combined/
+│       └── ais_SoftVoting_7_mice1.pkl
+├── hemorrhagic/
+│   ├── text/
+│   │   └── ich_baseline_macbertnewend1cnn_1time_epoch3.pth
+│   ├── structured/
+│   │   └── ich_SoftVoting_7_mice1.pkl
+│   └── combined/
+│       └── ich_SoftVoting_8_mice1.pkl
+└── macbert/
+    ├── config.json
+    ├── pytorch_model.bin
+    ├── vocab.txt
+    └── tokenizer_config.json
 ```
 
 5. 启动应用

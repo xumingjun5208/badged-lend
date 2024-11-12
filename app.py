@@ -1077,8 +1077,8 @@ if __name__ == "__main__":
         # 启动服务
         demo.launch(
             server_name="0.0.0.0",
-            server_port=9999,  # 使用动态端口
-            share=True,
+            server_port=7860,  # 使用动态端口
+            share=False,
             show_error=False,
             max_threads=40
         )

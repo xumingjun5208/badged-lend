@@ -3,7 +3,7 @@
 ## Project Overview
 
 This system is an AI-powered diagnostic assistant system designed to predict the risk of stroke-associated pneumonia in stroke patients. It supports prediction tasks for both ischemic and hemorrhagic stroke types by integrating medical record text and clinical indicators to provide decision support for doctors.
-
+![](https://github.com/user-attachments/assets/465adf14-6cb9-41e4-b56b-776c077f2e25)
 ## System Architecture
 
 ### Model Components

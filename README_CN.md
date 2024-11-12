@@ -163,38 +163,51 @@
 
 ### 环境配置
 
-1. 系统要求
+### 环境要求
 
-   - 操作系统：Linux/Windows
-   - Python 版本：3.8+
-   - CUDA 版本：11.0+ (GPU 版本)
+- Python 3.8+
+- CUDA 11.0+ (GPU版本)
+- 4GB+ RAM
 
-2. 依赖安装
+### 安装步骤
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. 克隆仓库
 
-3. 模型文件
-   - 下载预训练模型
-   - 放置到指定目录
-   - 检查文件权限
+```bash
+git clone https://github.com/your-username/badged-lendcare.git
+cd badged-lendcare
+```
 
-### 启动服务
+2. 创建并激活conda环境
 
-1. 开发模式
+```bash
+conda create -n SAP python=3.8
+conda activate SAP
+```
 
-   ```bash
-   python dev.py
-   ```
+3. 安装依赖
 
-2. 生产模式
+```bash
+pip install -r requirements.txt
+```
 
-   ```bash
-   python app.py
-   ```
+4. 下载模型文件
 
-3. 访问地址
+```bash
+# 安装huggingface_hub
+pip install huggingface_hub
+
+# 运行下载脚本
+python scripts/download_models.py
+```
+
+5. 启动应用
+
+```bash
+python app.py
+```
+
+6. 访问地址
    - 本地访问：http://localhost:7860
    - 默认端口：7860
 

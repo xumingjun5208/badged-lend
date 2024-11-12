@@ -1,0 +1,60 @@
+{
+    "title": "🏥 Stroke-Associated Pneumonia Prediction System",
+    "subtitle": "AI-Powered Diagnostic Assistant System",
+    "task_selector": {
+        "label": "Select Prediction Task",
+        "info": "Please select the type of prediction task",
+        "choices": ["Ischemic Stroke Pneumonia Prediction", "Hemorrhagic Stroke Pneumonia Prediction"]
+    },
+    "guide_button": "📖 User Guide",
+    "text_input": {
+        "label": "Medical Record",
+        "placeholder": "Please enter patient's medical record, including chief complaint, present illness, physical examination..."
+    },
+    "input_guide": "### 📝 Input Guide\n- Recommended content: Chief complaint, present illness, physical examination\n- Recommended length: 100-1000 words\n- Key information: Consciousness, vital signs, neurological signs",
+    "example_button": "Example",
+    "clinical_indicators": "### 📊 Clinical Indicators",
+    "predict_button": "Predict",
+    "clear_button": "Clear",
+    
+    "output": {
+        "prediction_result": "Prediction Result",
+        "high_risk": "High Risk",
+        "low_risk": "Low Risk",
+        "risk_probability": "Risk Probability",
+        "ischemic_high_risk_note": "Patient may develop ischemic stroke-associated pneumonia within 7 days after admission",
+        "ischemic_low_risk_note": "Patient has a low risk of developing ischemic stroke-associated pneumonia",
+        "hemorrhagic_high_risk_note": "Patient may develop hemorrhagic stroke-associated pneumonia within 7 days after admission",
+        "hemorrhagic_low_risk_note": "Patient has a low risk of developing hemorrhagic stroke-associated pneumonia",
+        "prediction_error": "Please enter at least one of the medical record or clinical indicators",
+        
+        "text_analysis": {
+            "title": "📊 Text Analysis Results",
+            "legend": {
+                "extremely_high": "Extremely high correlation",
+                "high": "High correlation",
+                "moderate": "Moderate correlation",
+                "low": "Low correlation"
+            },
+            "legend_html": {
+                "title": "📊 Text Importance Explanation:",
+                "legend": {
+                    "extremely_high": "Extremely high correlation",
+                    "high": "High correlation",
+                    "moderate": "Moderate correlation",
+                    "low": "Low correlation"
+                },
+                "note": "Hover over marked text to view specific importance values"
+            }
+        },
+        
+        "feature_importance": {
+            "title": "📈 Feature Importance Analysis",
+            "legend": {
+                "increase_risk": "Risk-increasing factors",
+                "decrease_risk": "Risk-decreasing factors",
+                "impact": "Impact magnitude"
+            }
+        }
+    }
+} 

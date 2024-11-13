@@ -6,8 +6,8 @@ This system is an AI-powered diagnostic assistant system designed to predict the
 ![](https://github.com/user-attachments/assets/465adf14-6cb9-41e4-b56b-776c077f2e25)
 
 ## Online Demo
-[User Guide](docs/help_EN.md)
-Try our online demo at: [http://www.badged-lend.com](http://www.badged-lend.com)
+[🎯User Guide](docs/help_EN.md)
+Try our online [⚡demo](http://www.badged-lend.com)
 ![](https://github.com/user-attachments/assets/fa8bf2b1-27ad-4e43-a296-dd64bcfca379)
 
 ## System Architecture

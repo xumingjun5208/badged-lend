@@ -240,41 +240,6 @@ python app.py
    - Local access: http://localhost:7860
    - Default port: 7860
 
-## Maintenance Guide
-
-### Logging System
-
-- Runtime Logs
-  - Records prediction requests
-  - Error tracking
-  - Performance monitoring
-- Error Handling
-  - Input validation
-  - Exception catching
-  - User-friendly prompts
-
-### Performance Optimization
-
-- Model Optimization
-  - Model preloading
-  - Batch processing
-  - Memory management
-- Concurrent Processing
-  - Request queue
-  - Concurrency limits
-  - Load balancing
-
-### Version Control
-
-- Code Version
-  - Git management
-  - Branch strategy
-  - Release process
-- Model Version
-  - Version records
-  - Compatibility check
-  - Update mechanism
-
 ## Development Team
 
 ### Research Institution

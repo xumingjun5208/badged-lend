@@ -122,3 +122,9 @@ If you encounter problems or need help:
 - 🏛️ Institution: School of Science, China Pharmaceutical University
 - 🔬 Laboratory: Laboratory of Medical Big Data and Artificial Intelligence
 - ⏰ Working Hours: Monday to Friday 9:00-18:00 
+
+## 💻 Source Code
+
+- 📦 GitHub Repository: [badged-lend](https://github.com/xumingjun5208/badged-lend)
+- 🔄 Latest Version: v1.0
+- 📄 License: MIT License

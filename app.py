@@ -24,6 +24,14 @@ import gradio as gr
 import sys
 import time
 import json
+import gc
+import torch
+
+def cleanup():
+    """清理内存资源"""
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
 prefix = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(prefix)
 
@@ -514,7 +522,8 @@ with gr.Blocks(
                 <p style="margin: 0.5em 0">{risk_note}</p>
             </div>
             """
-
+            # 清理加载过程中的临时内存
+            cleanup()
             # 返回所有输出
             return [
                 result_outputs[0],                               # 文本分析结果
@@ -524,6 +533,8 @@ with gr.Blocks(
                 result_outputs[3]                                # SHAP组
             ]
         except Exception as e:
+            # 清理加载过程中的临时内存
+            cleanup()
             print(f"Error in ischemic prediction: {e}")
             return handle_prediction_error(e)
 
@@ -778,7 +789,8 @@ with gr.Blocks(
                 <p style="margin: 0.5em 0">{risk_note}</p>
             </div>
             """
-
+            # 清理预测过程中的临时内存
+            cleanup()
             # 返回所有输出
             return [
                 result_outputs[0],                               # 文本分析结果
@@ -788,6 +800,8 @@ with gr.Blocks(
                 result_outputs[3]                                # SHAP组
             ]
         except Exception as e:
+            # 清理预测过程中的临时内存
+            cleanup()
             print(f"Error in hemorrhagic prediction: {e}")
             return handle_prediction_error(e)
 
@@ -1035,6 +1049,12 @@ def preload_models():
     logger = Logger("model_preload").get_logger()
     try:
         logger.info("Preloading models...")
+        
+        # 使用轻量级配置
+        torch.backends.cudnn.benchmark = True
+        if torch.cuda.is_available():
+            torch.cuda.set_per_process_memory_fraction(0.8)  # 限制GPU内存使用
+            
         # 初始化jieba分词器
         print("Initializing jieba...")
         init_jieba()
@@ -1057,10 +1077,13 @@ def preload_models():
         # 组合模型
         _, _, _ = get_hemorrhagic_combined_model()
 
+        # 清理加载过程中的临时内存
+        cleanup()
         logger.info("All models loaded successfully!")
         return True
     except Exception as e:
         logger.error(f"Error preloading models: {str(e)}")
+        cleanup()
         return False
 
 
@@ -1075,12 +1098,16 @@ if __name__ == "__main__":
             raise Exception("Failed to preload models")
 
         # 启动服务
+        demo.queue(
+            max_size=20,         # 限制队列长度
+            api_open=False       # 关闭API访问以减少负载
+        )
         demo.launch(
             server_name="0.0.0.0",
-            server_port=7860,  # 使用动态端口
+            server_port=8080,  # 使用动态端口
             share=False,
             show_error=False,
-            max_threads=40
+            max_threads=10,
         )
     except Exception as e:
         print(f"Error starting server: {e}")

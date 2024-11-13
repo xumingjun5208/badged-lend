@@ -11,7 +11,6 @@ uvicorn==0.32.0
 # 机器学习工具
 scikit-learn==0.24.1
 shap==0.41.0
-lightgbm==4.4.0
 xgboost==0.90
 
 # 数据处理
@@ -35,10 +34,6 @@ opencv-contrib-python>=4.10.0.84
 tqdm==4.66.4
 psutil==5.8.0
 python-multipart==0.0.17
-
-# 日志和监控
-tensorboard==2.14.0
-tensorboardX==2.5.1
 
 # 开发工具
 black==22.1.0

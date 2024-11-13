@@ -6,9 +6,12 @@
 ![](https://github.com/user-attachments/assets/465adf14-6cb9-41e4-b56b-776c077f2e25)
 
 ## 在线演示
+[🎯用户指南](docs/help_EN.md)
 
-访问在线演示：[http://www.badged-lend.com](http://www.badged-lend.com)
+访问在线演示： [⚡demo](http://www.badged-lend.com)
+
 ![sap前端中文](https://github.com/user-attachments/assets/ece96a31-5566-4036-a123-c5221ba51214)
+
 ## 系统架构
 
 ### 模型组成

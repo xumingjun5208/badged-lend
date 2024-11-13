@@ -241,7 +241,7 @@ python app.py
 ```
 
 6. 访问地址
-   - 本地访问：http://localhost:7860
+   - 本地访问：http://localhost:8080
    - 默认端口：7860
 
 ## 开发团队

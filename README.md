@@ -239,7 +239,7 @@ python app.py
 ```
 
 6. Access Address
-   - Local access: http://localhost:7860
+   - Local access: http://localhost:8080
    - Default port: 7860
 
 ## Development Team

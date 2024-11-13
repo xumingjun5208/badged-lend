@@ -8,7 +8,7 @@
 ## 在线演示
 
 访问在线演示：[http://www.badged-lend.com](http://www.badged-lend.com)
-
+![sap前端中文](https://github.com/user-attachments/assets/ece96a31-5566-4036-a123-c5221ba51214)
 ## 系统架构
 
 ### 模型组成

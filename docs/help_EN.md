@@ -41,7 +41,7 @@ This system is an AI-assisted diagnostic tool that helps doctors assess the risk
 #### 🔍 Ischemic Stroke Indicators
 
 - **Dysphagia** `[Yes/No]`: Whether the patient has swallowing difficulties
-- **Ventilator-Associated Pneumonia** `[Yes/No]`: Whether ventilator-associated pneumonia is present
+- **Ventilator-Associated Pneumonia** `[Yes/No]`: Whether predict to ventilator-associated pneumonia
 - **Decubitus Ulcer** `[Yes/No]`: Whether bedsores are present
 - **Age** `[Value]`: Patient's age
 - **Resuscitation Count** `[Value]`: Number of resuscitations
@@ -50,7 +50,7 @@ This system is an AI-assisted diagnostic tool that helps doctors assess the risk
 #### 🔍 Hemorrhagic Stroke Indicators
 
 - **Dysphagia** `[Yes/No]`: Whether the patient has swallowing difficulties
-- **Ventilator-Associated Pneumonia** `[Yes/No]`: Whether ventilator-associated pneumonia is present
+- **Ventilator-Associated Pneumonia** `[Yes/No]`:  Whether predict to ventilator-associated pneumonia
 - **Decubitus Ulcer** `[Yes/No]`: Whether bedsores are present
 - **Hydrocephalus** `[Yes/No]`: Whether hydrocephalus is present
 - **Brain Herniation** `[Yes/No]`: Whether brain herniation is present

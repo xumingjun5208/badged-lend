@@ -113,7 +113,6 @@ Try our online demo at: [http://www.badged-lend.com](http://www.badged-lend.com)
      - Low: Gray marking
    - Interactive Features
      - Hover to show importance value
-     - Click to view detailed information
 
 3. Feature Importance
    - SHAP Value Analysis
